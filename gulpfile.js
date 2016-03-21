@@ -8,4 +8,11 @@ gulp.task('css', function() {
     .pipe(gulp.dest('./app/assets/css'))
 });
 
-gulp.task('default', ['css']);
+gulp.task('js', function() {
+  return gulp
+    .src('./app/index.html')
+    .pipe($.inject(gulp.src('./app/**/*.js').pipe($.angularFilesort())))
+    .pipe(gulp.dest('./app'));
+});
+
+gulp.task('default', ['css', 'js']);
