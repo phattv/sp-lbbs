@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vanphattran/lbbs/issues"
   },
-  "homepage": "https://github.com/vanphattran/lbbs#readme"
+  "homepage": "https://github.com/vanphattran/lbbs#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
