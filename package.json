@@ -1,0 +1,19 @@
+{
+  "name": "lbbs",
+  "version": "1.0.0",
+  "description": "LBBS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanphattran/lbbs.git"
+  },
+  "author": "Phat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanphattran/lbbs/issues"
+  },
+  "homepage": "https://github.com/vanphattran/lbbs#readme"
+}
