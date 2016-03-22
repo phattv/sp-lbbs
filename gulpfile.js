@@ -15,4 +15,9 @@ gulp.task('js', function() {
     .pipe(gulp.dest('./'));
 });
 
+gulp.task('watch', function() {
+  return gulp
+    .watch('./app/assets/less/*.less', ['css']);
+});
+
 gulp.task('default', ['css', 'js']);
