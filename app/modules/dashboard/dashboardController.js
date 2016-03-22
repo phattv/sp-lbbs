@@ -10,7 +10,17 @@
       function() {
         var vm = this;
 
-        vm.title = 'Dashboard view';
+        vm.products = [];
+
+        for(var i = 0; i < 10; i++) {
+          vm.products.push({
+            name: 'E00' + i,
+            description: 'Male Hose Nipple',
+            material: 'Plated Steel',
+            npt: 0.125,
+            fittingType: 'Male Hose Nipple'
+          })
+        }
       }
     ])
 })();

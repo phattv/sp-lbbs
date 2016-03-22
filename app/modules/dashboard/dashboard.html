@@ -1,1 +1,26 @@
-<h3>{{vm.title}}</h3>
+<div class="dashboard-view">
+  <div class="banner">
+
+  </div>
+
+  <div class="product-group-container">
+    <div class="row">
+      <div class="col-xs-6" ng-repeat="product in vm.products">
+        <div class="product-group">
+          <div class="product-image">
+            <span class="img-container">
+              <img src="//placehold.it/150x150" alt="Male Hose Nipple">
+            </span>
+          </div>
+          <div class="product-overview">
+            <h4 class="name">{{product.name}}</h4>
+            <p class="description">{{product.description}}</p>
+            <div><label>Material: </label>{{product.material}}</div>
+            <div><label>NPT (in): </label>{{product.npt}}</div>
+            <div><label>Fitting Type: </label>{{product.fittingType}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
