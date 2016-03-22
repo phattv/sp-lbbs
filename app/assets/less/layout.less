@@ -1,6 +1,28 @@
 .lbbs-header {
-  width: 100%;
-  background: yellow;
+  height: 50px;
+
+  .header-container {
+    .bg-yellow;
+    .text-black;
+    border-bottom: 10px solid @darkgray;
+
+    .logo-container {
+      display: inline-block;
+
+      img {
+        width: 136px;
+        height: 48px;
+      }
+    }
+
+    .header-text {
+      display: inline-block;
+
+      h3 {
+        margin: 0;
+      }
+    }
+  }
 }
 
 .lbbs-content {
