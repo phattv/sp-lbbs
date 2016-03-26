@@ -5,7 +5,7 @@
   'use strict';
 
   angular
-    .module('lbbs')
+    .module('lbbs.modules.hose')
     .controller('hoseDetailsController', ['$stateParams', 'hoseService',
       function($stateParams, hoseService) {
         var vm = this;

@@ -1,0 +1,22 @@
+<div class="hose-list-view">
+  <div class="product-group-container">
+    <div class="row">
+      <div class="col-xs-6" ng-repeat="hose in vm.hoses">
+        <div class="product-group">
+          <div class="product-image" ng-click="vm.goToDetailsView(hose)">
+            <span class="img-container">
+              <img src="//placehold.it/150x150" alt="Male Hose Nipple">
+            </span>
+          </div>
+          <div class="product-overview">
+            <h4 class="name" ng-click="vm.goToDetailsView(hose)">{{hose.name}}</h4>
+            <p class="description">{{hose.description}}</p>
+            <div><label>Material:</label> {{hose.material}}</div>
+            <div><label>NPT (in):</label> {{hose.npt}}</div>
+            <div><label>Fitting Type:</label> {{hose.fittingType}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -26,21 +26,5 @@
             controller: 'dashboardController',
             controllerAs: 'vm'
           })
-          .state('main.hose', {
-            abstract: true,
-            template: '<div ui-view></div>'
-          })
-          .state('main.hose.list', {
-            url: '/hose',
-            templateUrl: './app/modules/hose/hose.html',
-            controller: 'hoseController',
-            controllerAs: 'vm'
-          })
-          .state('main.hose.details', {
-            url: '/hose/:hoseId',
-            templateUrl: './app/modules/hose/hoseDetails.html',
-            controller: 'hoseDetailsController',
-            controllerAs: 'vm'
-          })
       }])
 })();

@@ -5,8 +5,8 @@
   'use strict';
 
   angular
-    .module('lbbs')
-    .controller('hoseController', ['$state', 'hoseService',
+    .module('lbbs.modules.hose')
+    .controller('hoseListController', ['$state', 'hoseService',
       function ($state, hoseService) {
         var vm = this;
 

@@ -18,39 +18,41 @@
     }
   }
 
-  .product-group-container {
-    padding: 40px 15px;
+  .hose-list-view {
+    .product-group-container {
+      padding: 40px 15px;
 
-    .product-group {
-      padding: 10px 0;
+      .product-group {
+        padding: 10px 0;
 
-      .product-image {
-        float: left;
-        cursor: pointer;
-
-        .img-container {
-          height: 150px;
-          width: 150px;
-        }
-      }
-
-      .product-overview {
-        margin-left: 170px;
-        border-top: 1px solid @gray;
-        border-bottom: 1px solid @gray;
-        padding: 2px 0;
-
-        .name {
-          font-weight: bold;
+        .product-image {
+          float: left;
           cursor: pointer;
 
-          &:hover {
-            .text-yellow;
+          .img-container {
+            height: 150px;
+            width: 150px;
           }
         }
 
-        .description {
-          .text-gray;
+        .product-overview {
+          margin-left: 170px;
+          border-top: 1px solid @gray;
+          border-bottom: 1px solid @gray;
+          padding: 2px 0;
+
+          .name {
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+              .text-yellow;
+            }
+          }
+
+          .description {
+            .text-gray;
+          }
         }
       }
     }

@@ -7,10 +7,12 @@
 
   angular
     .module('lbbs', [
-      'ui.router'
+      'ui.router',
+
+      'lbbs.modules'
     ])
     .constant('constants', {})
     .run([function () {
-      
+
     }]);
 })();
