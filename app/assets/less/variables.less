@@ -41,7 +41,7 @@ body {
   // h6: 12px
 }
 
-// Text colors
+// Text
 .text-yellow {
   color: @yellow;
 }
@@ -56,6 +56,12 @@ body {
 }
 .text-lightgray {
   color: @lightgray;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 // Background colors
@@ -73,4 +79,16 @@ body {
 }
 .bg-lightgray {
   background: @lightgray;
+}
+
+// Buttons
+.btn {
+  border-radius: 0 !important;
+}
+
+.btn-default {
+  .bg-yellow !important;
+  .text-darkgray !important;
+  .text-uppercase !important;
+  .text-bold !important;
 }

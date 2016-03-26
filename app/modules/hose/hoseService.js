@@ -17,7 +17,11 @@
             description: 'Male Hose Nipple',
             material: 'Plated Steel',
             npt: 0.125,
-            fittingType: 'Male Hose Nipple'
+            fittingType: 'Male Hose Nipple',
+            length: 100 + i,
+            weightKg: 0.35 + i,
+            weightLb: 0.15 + i,
+            uom: 10 + 1 + '/BX'
           })
         }
 

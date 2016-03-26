@@ -1,3 +1,48 @@
 <div class="hose-detail-view">
   {{vm.hose}}
+  <div class="product-container row">
+    <div class="product-image col-xs-6">
+      <div class="img-container">
+        <img src="//placehold.it/375x375">
+      </div>
+    </div>
+    <div class="product-details col-xs-6">
+      <div class="header">CHI TIẾT SẢN PHẨM</div>
+      <div class="name"><h3>{{vm.hose.name}}</h3></div>
+      <form class="form-horizontal details">
+        <div class="form-group">
+          <label class="col-xs-6">Fitting Type</label>
+          <span class="col-xs-6">{{vm.hose.fittingType}}</span>
+        </div>
+        <div class="form-group">
+          <label class="col-xs-6">NPT (in)</label>
+          <span class="col-xs-6">{{vm.hose.npt}}</span>
+        </div>
+        <div class="form-group">
+          <label class="col-xs-6">Shank Length (in)</label>
+          <span class="col-xs-6">{{vm.hose.length}}</span>
+        </div>
+        <div class="form-group">
+          <label class="col-xs-6">Material</label>
+          <span class="col-xs-6">{{vm.hose.material}}</span>
+        </div>
+        <div class="form-group">
+          <label class="col-xs-6">Package Weight (lbs)</label>
+          <span class="col-xs-6">{{vm.hose.weightLb}}</span>
+        </div>
+        <div class="form-group">
+          <label class="col-xs-6">Package Weight (kg)</label>
+          <span class="col-xs-6">{{vm.hose.weightKg}}</span>
+        </div>
+        <div class="form-group">
+          <label class="col-xs-6">Unit of Measure</label>
+          <span class="col-xs-6">{{vm.hose.uom}}</span>
+        </div>
+      </form>
+      <div class="order">
+        <a ui-sref="main.hose.list" class="pull-left">< Quay lại</a>
+        <a class="btn btn-default" class="pull-right">ĐẶT HÀNG</a>
+      </div>
+    </div>
+  </div>
 </div>

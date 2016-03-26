@@ -10,7 +10,7 @@
     padding: 10px 15px;
 
     .name {
-      text-transform: uppercase;
+      .text-uppercase;
     }
 
     .description {
@@ -42,7 +42,7 @@
           padding: 2px 0;
 
           .name {
-            font-weight: bold;
+            .text-bold;
             cursor: pointer;
 
             &:hover {
@@ -59,6 +59,42 @@
   }
 
   .hose-detail-view {
-    .bg-yellow;
+    .product-container {
+      .product-image {
+        .img-container {
+          height: 375px;
+          width: 375px;
+        }
+      }
+
+      .product-details {
+        .header {
+          .bg-yellow;
+          .text-darkgray;
+          .text-uppercase;
+          padding: 5px;
+        }
+
+        .name {
+          h3 {
+            .text-uppercase;
+            .text-bold;
+
+            margin-bottom: 20px;
+          }
+        }
+
+        .details {
+          border-bottom: 1px solid @gray;
+          padding-bottom: 20px;
+
+          .form-group {
+            margin-bottom: 7px !important;
+          }
+        }
+
+
+      }
+    }
   }
 }
