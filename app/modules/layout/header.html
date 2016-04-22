@@ -1,14 +1,43 @@
 <div class="lbbs-header">
   <div class="header-container">
-    <span class="logo-container" ui-sref="main.dashboard">
-      <img src="/app/assets/img/logo.png" alt="LBBS">
-    </span>
-    <span class="header-text">
-      <h3>Nhà phân phối chính thức sản phẩm
-        <span class="img-container">
-          <img src="//placehold.it/120x35" alt="">
-        </span>
-        tại Việt Nam</h3>
-    </span>
+    <div class="clearfix logo-block">
+      <span class="logo-container" ui-sref="main.dashboard">
+        <img src="/app/assets/img/logo.png" alt="LBBS">
+      </span>
+      <span class="header-text">
+        <h3>Nhà phân phối chính thức sản phẩm
+          <span class="img-container">
+            <img src="//placehold.it/120x35" alt="">
+          </span>
+          tại Việt Nam</h3>
+      </span>
+    </div>
+    <div class="cleafix menu-block">
+      <div class="col-sm-3 menu">
+        <a>GIỚI THIỆU</a>
+      </div>
+      <div class="col-sm-3 menu" ng-mouseover="isProductMenuHovered = true" ng-mouseleave="isProductMenuHovered = false">
+        <a>SẢN PHẨM & DỊCH VỤ</a>
+        <div class="submenu-block" ng-show="isProductMenuHovered">
+          <div class="submenu"><a>HOSE AND ATTACHMENT SOLUTIONS</a></div>
+          <div class="submenu"><a>ELECTRICAL FASTENING SOLUTIONS</a></div>
+          <div class="submenu"><a>INDUSTRIAL SOLUTIONS</a></div>
+          <div class="submenu"><a>TOOLS SOLUTIONS</a></div>
+          <div class="submenu"><a>ENERGY SOLUTIONS</a></div>
+        </div>
+      </div>
+      <div class="col-sm-3 menu" ng-mouseover="isInfoMenuHovered = true" ng-mouseleave="isInfoMenuHovered = false">
+        <a>THÔNG TIN</a>
+        <div class="submenu-block" ng-show="isInfoMenuHovered">
+          <div class="submenu"><a>Catalogs</a></div>
+          <div class="submenu"><a>Brochures</a></div>
+          <div class="submenu"><a>Manuals</a></div>
+          <div class="submenu"><a>Videos</a></div>
+        </div>
+      </div>
+      <div class="col-sm-3 menu">
+        <a>LIÊN HỆ</a>
+      </div>
+    </div>
   </div>
 </div>

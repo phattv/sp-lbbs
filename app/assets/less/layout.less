@@ -1,22 +1,52 @@
 .lbbs-header {
-  height: 50px;
 
   .header-container {
-    .bg-yellow;
     .text-black;
-    border-bottom: 10px solid @darkgray;
 
-    .logo-container {
-      display: inline-block;
-      width: 136px;
-      height: 48px;
+    .logo-block {
+      .bg-yellow;
+      .logo-container {
+        display: inline-block;
+        width: 136px;
+        height: 48px;
+      }
+
+      .header-text {
+        display: inline-block;
+
+        h3 {
+          margin: 0;
+        }
+      }
     }
 
-    .header-text {
-      display: inline-block;
+    .menu-block {
+      text-align: center;
 
-      h3 {
-        margin: 0;
+      .menu {
+        .bg-darkgray;
+        padding: 5px 0;
+        cursor: pointer;
+
+        a {
+          .text-yellow;
+
+          &:hover {
+            .text-gray;
+          }
+        }
+
+        .submenu-block {
+          .bg-darkgray;
+          text-align: left;
+          position: absolute;
+          width: 100%;
+          z-index: 10;
+
+          .submenu {
+            padding: 5px;
+          }
+        }
       }
     }
   }
