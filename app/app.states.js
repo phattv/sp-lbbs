@@ -18,7 +18,7 @@
         $stateProvider
           .state('main', {
             abstract: true,
-            templateUrl: './app/modules/layout/main.html'
+            templateUrl: './app/modules/layout/layout.html'
           })
           .state('main.dashboard', {
             url: '/',
