@@ -8,6 +8,7 @@
   angular
     .module('lbbs', [
       'ui.router',
+      'ui.bootstrap',
 
       'lbbs.modules'
     ])
