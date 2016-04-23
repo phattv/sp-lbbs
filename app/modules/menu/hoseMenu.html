@@ -1,0 +1,78 @@
+<div class="menu-view">
+  <div class="banner">
+    <span class="img-container">
+      <img src="/app/assets/img/banner/banner_Hose.jpg" alt="Banner">
+    </span>
+  </div>
+
+  <div class="clearfix mouseover-menu-view" ng-init="mouseoverMenu = 0">
+    <div class="col-sm-6">
+      <div class="mouseover-menu-block">
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 1" ng-mouseout="mouseoverMenu = 0">
+          <h2>- ADJUSTABLE CLAMPING</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 2" ng-mouseout="mouseoverMenu = 0"
+             ui-sref="main.hose.list">
+          <h2>- HOSE FITTINGS</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 3" ng-mouseout="mouseoverMenu = 0">
+          <h2>- IDENTIFICATIONS</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 4" ng-mouseout="mouseoverMenu = 0">
+          <h2>- PREFORMED CLAMPS</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 5" ng-mouseout="mouseoverMenu = 0">
+          <h2>- TOOLS</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div ng-show="mouseoverMenu == 0">
+        <span class="img-container">
+          <img src="/app/assets/img/menu/main_Hose.jpg" alt="Adjustable clamping">
+        </span>
+      </div>
+      <div ng-show="mouseoverMenu == 1">
+        <p>A wide style range of clamps to fit a specific application.</p>
+        <ul>
+          <li>Bold Clamp - Used in monitoring hardware.</li>
+          <li>Scru-Band - Stainless Steel designed for light duty applications</li>
+          <li>Scru-Lokt - Stainless Steel design.</li>
+          <li>Scru-Seal - Stainless Steel used to create any size clamp.</li>
+          <li>Worm Gear - Stainless Steel reusable clamps.</li>
+        </ul>
+      </div>
+      <div ng-show="mouseoverMenu == 2">
+        <h1>2</h1>
+        <span class="img-container">
+          <img src="//placehold.it/490x400" alt="Hose fittings">
+        </span>
+      </div>
+      <div ng-show="mouseoverMenu == 3">
+        <ul>
+          <li>Bulk Package Preformed Clamps - Widest choice of sizes and materials in a leak resistant design.</li>
+          <li>Center Punch Preformed Clamps - Manufactured with 201 Stainless Steel buckles to provide added locking
+            strength.
+          </li>
+          <li>Junior Smooth ID Preformed Clamps - Widest choice of sizes and materials in a leak resistant design.</li>
+          <li>Ultra-Lok Preformed Clamps - Designed for quick installation, highest clamping force and gap-free inside
+            diameter.
+          </li>
+          <li>Universal Preformed Clamps - A Stainless Steel dual lock clamp.</li>
+        </ul>
+      </div>
+      <div ng-show="mouseoverMenu == 4">
+        <h1>4</h1>
+        <span class="img-container">
+          <img src="//placehold.it/490x400" alt="Preformed clamps">
+        </span>
+      </div>
+      <div ng-show="mouseoverMenu == 5">
+        <h1>5</h1>
+        <span class="img-container">
+          <img src="//placehold.it/490x400" alt="Tools">
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

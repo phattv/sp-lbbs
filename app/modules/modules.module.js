@@ -5,6 +5,7 @@
   'use strict';
 
   angular.module('lbbs.modules', [
-    'lbbs.modules.hose'
+    'lbbs.modules.hose',
+    'lbbs.modules.menu'
   ])
 })();

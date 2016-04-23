@@ -14,10 +14,6 @@
             abstract: true,
             templateUrl: './app/modules/hose/hose.html'
           })
-          .state('main.hose.menu', {
-            url: '/hose',
-            templateUrl: './app/modules/hose/menu.html'
-          })
           .state('main.hose.list', {
             url: '/hose/list',
             templateUrl: './app/modules/hose/hoseList.html',
