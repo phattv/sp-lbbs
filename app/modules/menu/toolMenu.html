@@ -1,0 +1,34 @@
+<div class="menu-view">
+  <div class="banner">
+    <span class="img-container">
+      <img src="/app/assets/img/banner/banner_Tool-Solution.jpg" alt="Banner">
+    </span>
+  </div>
+
+  <div class="clearfix mouseover-menu-view" ng-init="mouseoverMenu = 0">
+    <div class="col-sm-6">
+      <div class="mouseover-menu-block">
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 1" ng-mouseout="mouseoverMenu = 0">
+          <h2>HAND TOOLS</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 2" ng-mouseout="mouseoverMenu = 0"
+             ui-sref="main.hose.list">
+          <h2>PNEUMATIC TOOLS</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div ng-show="mouseoverMenu == 0">
+        <span class="img-container">
+          <img src="/app/assets/img/menu/main_Tool-Solutions.jpg">
+        </span>
+      </div>
+      <div ng-show="mouseoverMenu == 1">
+        <h1>1</h1>
+      </div>
+      <div ng-show="mouseoverMenu == 2">
+        <h1>2</h1>
+      </div>
+    </div>
+  </div>
+</div>

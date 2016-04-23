@@ -1,0 +1,86 @@
+<div class="menu-view">
+  <div class="banner">
+    <span class="img-container">
+      <img src="/app/assets/img/banner/banner_Industrial-Solutions.jpg" alt="Banner">
+    </span>
+  </div>
+
+  <div class="clearfix mouseover-menu-view" ng-init="mouseoverMenu = 0">
+    <div class="col-sm-6">
+      <div class="mouseover-menu-block">
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 1" ng-mouseout="mouseoverMenu = 0">
+          <h2>ADJUSTABLE CLAMPING</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 2" ng-mouseout="mouseoverMenu = 0"
+             ui-sref="main.hose.list">
+          <h2>BAND</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 3" ng-mouseout="mouseoverMenu = 0"
+             ui-sref="main.hose.list">
+          <h2>BAND-FAST</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 4" ng-mouseout="mouseoverMenu = 0"
+             ui-sref="main.hose.list">
+          <h2>BUCKLE</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 5" ng-mouseout="mouseoverMenu = 0"
+             ui-sref="main.hose.list">
+          <h2>COLOR-IT</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 6" ng-mouseout="mouseoverMenu = 0"
+             ui-sref="main.hose.list">
+          <h2>HARDWARE</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 7" ng-mouseout="mouseoverMenu = 0">
+          <h2>IDENTIFICATION</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 8" ng-mouseout="mouseoverMenu = 0">
+          <h2>KITS</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 9" ng-mouseout="mouseoverMenu = 0">
+          <h2>SIGNFIX</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 10" ng-mouseout="mouseoverMenu = 0">
+          <h2>TOOLS</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div ng-show="mouseoverMenu == 0">
+        <span class="img-container">
+          <img src="/app/assets/img/menu/main_Industrial-Solutions.jpg">
+        </span>
+      </div>
+      <div ng-show="mouseoverMenu == 1">
+        <h1>1</h1>
+      </div>
+      <div ng-show="mouseoverMenu == 2">
+        <h1>2</h1>
+      </div>
+      <div ng-show="mouseoverMenu == 3">
+        <h1>3</h1>
+      </div>
+      <div ng-show="mouseoverMenu == 4">
+        <h1>4</h1>
+      </div>
+      <div ng-show="mouseoverMenu == 5">
+        <h1>5</h1>
+      </div>
+      <div ng-show="mouseoverMenu == 6">
+        <h1>6</h1>
+      </div>
+      <div ng-show="mouseoverMenu == 7">
+        <h1>7</h1>
+      </div>
+      <div ng-show="mouseoverMenu == 8">
+        <h1>8</h1>
+      </div>
+      <div ng-show="mouseoverMenu == 9">
+        <h1>9</h1>
+      </div>
+      <div ng-show="mouseoverMenu == 10">
+        <h1>10</h1>
+      </div>
+    </div>
+  </div>
+</div>
