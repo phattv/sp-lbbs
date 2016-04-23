@@ -6,6 +6,7 @@
     .logo-block {
       .bg-yellow;
       .logo-container {
+        cursor: pointer;
         display: inline-block;
         width: 136px;
         height: 48px;
@@ -19,6 +20,7 @@
         }
 
         img {
+          cursor: pointer;
           height: 35px;
         }
       }
@@ -63,25 +65,60 @@
 
 .lbbs-footer {
   .footer-container {
-    .footer-item {
-      .bg-yellow;
 
-      .menu {
-        .text-black;
-        .text-uppercase;
-        .text-bold;
-        margin-left: 30px;
-        padding: 10px 20px 10px 0;
-        border-bottom: 1px solid @black;
+    // Mobile view
+    .visible-xs {
+      .footer-item {
+        .bg-yellow;
 
-        // TODO :last-child
+        .menu {
+          .text-black;
+          .text-uppercase;
+          .text-bold;
+          margin-left: 30px;
+          padding: 10px 20px 10px 0;
+          border-bottom: 1px solid @black;
+
+          // TODO :last-child
+        }
+      }
+
+      .copyright {
+        .bg-darkgray;
+        .text-lightgray;
+        padding: 10px 0 10px 20px;
       }
     }
 
-    .copyright {
-      .bg-darkgray;
-      .text-lightgray;
-      padding: 10px 0 10px 20px;
+    // Tablet view
+    .hidden-xs {
+      .bg-gray;
+      color: white !important;
+      letter-spacing: 1px;
+
+      .footer-column {
+        margin: 15px;
+        border-right: 1px solid white;
+
+        .footer-logo {
+          cursor: pointer;
+          width: 136px;
+          height: 48px;
+        }
+
+        .footer-column-header {
+          text-align: center;
+          text-transform: uppercase;
+          .text-yellow;
+          .text-bold;
+        }
+      }
+
+      .copyright {
+        .bg-darkgray;
+        .text-lightgray;
+        padding: 10px 0 10px 20px;
+      }
     }
   }
 }

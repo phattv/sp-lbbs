@@ -1,0 +1,33 @@
+<div class="menu-view">
+  <div class="banner">
+    <span class="img-container">
+      <img src="//placehold.it/1000x300" alt="Banner">
+
+      <!-- TODO: carousel -->
+      <!--<img src="/app/assets/img/banner/banner_Energy-Solutions.jpg" alt="Banner">-->
+    </span>
+  </div>
+
+  <div class="clearfix mouseover-menu-view" ng-init="mouseoverMenu = 0">
+    <div class="col-sm-6">
+      <div class="mouseover-menu-block">
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 1" ng-mouseout="mouseoverMenu = 0">
+          <h2>ELECTRIC FASTENING SOLUTIONS</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 2" ng-mouseout="mouseoverMenu = 0">
+          <h2>HOSE & ATTACHMENT SOLUTIONS</h2>
+        </div>
+        <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 3" ng-mouseout="mouseoverMenu = 0">
+          <h2>INDUSTRIAL SOLUTIONS</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div ng-show="mouseoverMenu == 0">
+        <span class="img-container">
+          <img src="/app/assets/img/menu/main_Catalogues.jpg">
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

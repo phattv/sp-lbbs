@@ -30,5 +30,9 @@
             url: '/energy-solutions',
             templateUrl: './app/modules/menu/energyMenu.html'
           })
+          .state('main.catalogueMenu', {
+            url: '/catalogues',
+            templateUrl: './app/modules/menu/catalogueMenu.html'
+          })
       }])
 })();
