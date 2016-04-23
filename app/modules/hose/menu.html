@@ -1,19 +1,20 @@
 <div class="clearfix mouseover-menu-view" ng-init="mouseoverMenu = 0">
   <div class="col-sm-6">
     <div class="mouseover-menu-block">
-      <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 1">
+      <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 1" ng-mouseout="mouseoverMenu = 0">
         <h2>- ADJUSTABLE CLAMPING</h2>
       </div>
-      <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 2">
+      <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 2" ng-mouseout="mouseoverMenu = 0"
+           ui-sref="main.hose.list">
         <h2>- HOSE FITTINGS</h2>
       </div>
-      <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 3">
+      <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 3" ng-mouseout="mouseoverMenu = 0">
         <h2>- IDENTIFICATIONS</h2>
       </div>
-      <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 4">
+      <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 4" ng-mouseout="mouseoverMenu = 0">
         <h2>- PREFORMED CLAMPS</h2>
       </div>
-      <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 5">
+      <div class="mouseover-menu" ng-mouseover="mouseoverMenu = 5" ng-mouseout="mouseoverMenu = 0">
         <h2>- TOOLS</h2>
       </div>
     </div>
@@ -43,9 +44,13 @@
     <div ng-show="mouseoverMenu == 3">
       <ul>
         <li>Bulk Package Preformed Clamps - Widest choice of sizes and materials in a leak resistant design.</li>
-        <li>Center Punch Preformed Clamps - Manufactured with 201 Stainless Steel buckles to provide added locking strength.</li>
+        <li>Center Punch Preformed Clamps - Manufactured with 201 Stainless Steel buckles to provide added locking
+          strength.
+        </li>
         <li>Junior Smooth ID Preformed Clamps - Widest choice of sizes and materials in a leak resistant design.</li>
-        <li>Ultra-Lok Preformed Clamps - Designed for quick installation, highest clamping force and gap-free inside diameter.</li>
+        <li>Ultra-Lok Preformed Clamps - Designed for quick installation, highest clamping force and gap-free inside
+          diameter.
+        </li>
         <li>Universal Preformed Clamps - A Stainless Steel dual lock clamp.</li>
       </ul>
     </div>
