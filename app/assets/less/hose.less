@@ -1,4 +1,6 @@
 .hose-view {
+  .bg-lightgray;
+
   .banner {
     .img-container {
       //height: 300px;
@@ -23,7 +25,7 @@
       padding: 40px 15px;
 
       .product-group {
-        padding: 10px 0;
+        padding-bottom: 50px;
 
         .product-image {
           float: left;
@@ -55,16 +57,22 @@
           }
         }
       }
+
+      a:hover {
+        .text-yellow;
+      }
     }
   }
 
   .hose-detail-view {
     .product-container {
+      padding-bottom: 50px;
+
       .product-image {
         .img-container {
           margin: auto;
-          height: 375px;
-          width: 375px;
+          height: 500px;
+          width: 500px;
         }
       }
 
@@ -95,6 +103,8 @@
         }
 
         .order {
+          padding-top: 30px;
+
           a {
             &:hover {
               color: @yellow;
@@ -125,6 +135,15 @@
             border-top: 1px solid @gray;
             border-bottom: 1px solid @gray;
             padding: 2px 0;
+          }
+        }
+
+        .more {
+          padding-left: 175px;
+          padding-top: 20px;
+
+          a:hover {
+            .text-yellow;
           }
         }
       }

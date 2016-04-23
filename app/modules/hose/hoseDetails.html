@@ -1,11 +1,11 @@
 <div class="hose-detail-view">
-  <div class="product-container row">
-    <div class="product-image col-xs-6">
+  <div class="product-container clearfix">
+    <div class="product-image col-sm-6">
       <div class="img-container">
         <img src="/app/assets/img/products/hose_fittings/E04699.jpg" alt="Male Hose Nipple">
       </div>
     </div>
-    <div class="product-details col-xs-6">
+    <div class="product-details col-sm-6">
       <div class="header">CHI TIẾT SẢN PHẨM</div>
       <div class="name"><h3>{{vm.hose.name}}</h3></div>
       <form class="form-horizontal details">
@@ -38,9 +38,13 @@
           <span class="col-xs-6">{{vm.hose.uom}}</span>
         </div>
       </form>
-      <div class="order">
-        <a ui-sref="main.hose.list" class="pull-left">< Quay lại</a>
-        <a class="btn btn-default pull-right" class="pull-right">ĐẶT HÀNG</a>
+      <div class="order clearfix">
+        <div class="col-xs-6">
+          <a ui-sref="main.hose.list" class="pull-left">< Quay lại</a>
+        </div>
+        <div class="col-xs-6">
+          <a class="btn btn-default">ĐẶT HÀNG</a>
+        </div>
       </div>
     </div>
   </div>
@@ -63,6 +67,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="more">
+        <a href="http://www.band-it-idex.com/bandit/bandit/en/USD/BandIT-Product/Hose-%26-Attachment-Solutions/Hose-Fittings/c/hosefittings"
+           target="_blank">More ></a>
       </div>
     </div>
   </div>
