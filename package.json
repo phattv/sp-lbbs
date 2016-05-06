@@ -4,8 +4,8 @@
   "description": "LBBS",
   "main": "index.js",
   "scripts": {
-    "build": "gulp",
-    "start": "node index.js",
+    "start": "node index",
+    "postinstall": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,13 +23,13 @@
     "connect-history-api-fallback": "^1.2.0",
     "express": "^4.13.4",
     "gulp-concat": "^2.6.0",
-    "main-bower-files": "^2.11.1"
-  },
-  "devDependencies": {
+    "main-bower-files": "^2.11.1",
     "gulp": "^3.9.1",
     "gulp-angular-filesort": "^1.1.1",
     "gulp-inject": "^4.0.0",
     "gulp-less": "^3.0.5",
     "gulp-load-plugins": "^1.2.0"
+  },
+  "devDependencies": {
   }
 }
