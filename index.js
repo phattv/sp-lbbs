@@ -8,4 +8,12 @@ app.get('/*', function(req, res) {
 });
 
 // app.listen(port);
-console.log('===== App started =====');
+// console.log('===== App started =====');
+
+app.set('port', (process.env.PORT || 5000));
+
+// app.use(express.static(__dirname + '/app/index.html');
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
