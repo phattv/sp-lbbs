@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "LBBS",
   "engines": {
-    "node": "4.1.0"
+    "node": "4.1.x"
   },
   "main": "index.js",
   "scripts": {
@@ -22,17 +22,17 @@
   },
   "homepage": "https://github.com/vanphattran/lbbs#readme",
   "dependencies": {
+    "bower": "^1.7.9",
     "browser-sync": "^2.12.3",
     "connect-history-api-fallback": "^1.2.0",
     "express": "^4.13.4",
-    "gulp-concat": "^2.6.0",
-    "main-bower-files": "^2.11.1",
     "gulp": "^3.9.1",
     "gulp-angular-filesort": "^1.1.1",
+    "gulp-concat": "^2.6.0",
     "gulp-inject": "^4.0.0",
     "gulp-less": "^3.0.5",
-    "gulp-load-plugins": "^1.2.0"
+    "gulp-load-plugins": "^1.2.0",
+    "main-bower-files": "^2.11.1"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
