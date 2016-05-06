@@ -1,8 +1,7 @@
 var express = require('express'),
   app = express(),
-  port = 2828;
+  port = 80;
 
-console.log('Node installed');
 app.use(express.static(__dirname)); // Serve files
 
 app.get('/*', function(req, res) {
